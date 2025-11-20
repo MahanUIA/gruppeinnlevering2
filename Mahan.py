@@ -20,4 +20,6 @@ def presentereProblemOgValg(problemStilling,valgMuligheter):
     poeng += valget[1]
     print(poeng)
 
+problem1 = {}
+
 presentereProblemOgValg("hei",[("hey",1),("hey2",2),("hey3",4)])
