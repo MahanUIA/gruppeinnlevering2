@@ -1,3 +1,4 @@
+# Presenterer brukeren med valg og sørger for at de velger et relevant valg
 def get_choice(prompt, valid_choices):
     choice = input(prompt)
     while choice not in valid_choices:
@@ -5,7 +6,10 @@ def get_choice(prompt, valid_choices):
         choice = input(prompt)
     return choice
 
+# Holder styr på poengene til brukeren
 points = 0
+
+# Situasjon 1
 print("Hei Erling, du må gjøre en rekke valg for å guide teamet ditt")
 print()
 print("SITUASJON 1: HVORDAN HÅNDTERE KONFLIKTEN MELLOM SILJE OG SIVERT?")
@@ -13,6 +17,7 @@ print()
 print("Valg 1: Kjøre workshop for å legge grunnlag for teambuilding. La konflikten vente på seg litt.")
 print("Valg 2: Erling velger Siverts løsning uten å vurdere alternativene ordentlig, fordi han ikke har tid til det.")
 print()
+
 svar1 = get_choice("Velg mellom alternativ 1 og 2: ", ["1", "2"])
 if svar1 == "1":
     print("Du har valgt valg 1")
@@ -21,6 +26,7 @@ elif svar1 == "2":
     print("Du har valgt valg 2")
     points -= 5
 
+# Situasjon 2
 print()
 print("SITUASJON 2: HVORDAN FORHINDRE AT KONFLIKTEN MELLOM HAMDI OG JABIR BLUSSER OPP?")
 print()
@@ -28,6 +34,7 @@ print("Valg 1: Kjøre avstemning med alle i bedriften og komme til kompromiss. D
 print("Valg 2: Erling unngår konflikten.")
 print("Valg 3: Erling analyserer saken selv, og tar en sjefsavgjørelse basert på fakta.")
 print()
+
 svar2 = get_choice("Select a choice between alternative 1, 2, and 3: ", ["1", "2", "3"])
 if svar2 == "1":
     print("Du har valgt valg 1")
@@ -39,6 +46,7 @@ elif svar2 == "3":
     print("Du har valgt valg 3")
     points += 5
 
+# Situasjon 3
 print()
 print("SITUASJON 3: HVORDAN BEVARE MOTIVASJONEN I TEAMET SOM HELHET?")
 print()
@@ -56,6 +64,8 @@ elif svar3 == "2":
 elif svar3 == "3":
     print("Du har valgt valg 3")
 print()
+
+# Skriver ut resultatet basert på brukerens poeng og gir en konsekvens
 print("Resultat:")
 if points >= 20:
     print("Konfliktene blir løst og gruppa jobber stabilt sammen og går inn i performing-fasen.")
