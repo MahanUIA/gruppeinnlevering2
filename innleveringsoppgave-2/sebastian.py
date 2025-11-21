@@ -9,6 +9,7 @@ print("1: Kjøre workshop for å legge grunnlag for teambuilding. La konflikten 
 print("2: Erling velger Siverts løsning uten å vurdere alternativene ordentlig, fordi han ikke har tid til det.")
 
 valg = input("Ditt valg (1/2): ")
+# Vi ber brukeren om å legge in svaret deres.
 while valg not in ["1", "2"]:
     valg = input("Ugyldig valg. Velg 1 eller 2: ")
 
@@ -18,6 +19,8 @@ if valg == "1":
     poeng += 1
 elif valg == "2":
     poeng += 0
+
+#Vi sjekker hva svaret til brukeren er og gir poeng basert på det.
 
 # Situasjon 2
 print("\nSITUASJON 2: HVORDAN FORHINDRE AT KONFLIKTEN MELLOM HAMDI OG JABIR BLUSSER OPP?")
@@ -57,7 +60,9 @@ elif valg == "3":
 print("\nResultat av dine valg:")
 if poeng > 2:
     print("Konklusjon 1: Konfliktene blir løst og gruppa jobber stabilt sammen og går inn i performing-fasen.")
-elif 0 <= poeng <= 2:
+elif poeng >= 1 poeng <= 2:
     print("Konklusjon 2: Det gjenstår noe dårlig stemning, og produktiviteten er tilstrekkelig til å fortsette.")
 else:
     print("Konklusjon 3: Konfliktene løses ikke, resultatet blir svekket og gruppa får ikke gjort det de skal til rett tid. Stillingen til Erling blir satt under press av kommunestyret.")
+
+# Vi sjekker hvor mange poeng brukeren har fått underveis. Enten har den fått mer enn 2 poeng, mellom 1 og 2 eller mindre enn 1.
