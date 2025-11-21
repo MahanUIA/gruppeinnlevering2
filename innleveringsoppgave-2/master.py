@@ -12,7 +12,7 @@ def PoengFraValg (problem, valgmuligheter):
         print (alternativ)
         #Presenterer valgmulighetene i terminalen
 
-    #Vi tenkte det var lov å ha flere enn 2 valgmuligheter, og har lagd programmet slik at den kan behandle situasjoner med både 2 og 3 svaralternativer.
+    #Utifra oppgavebeskrivelsen i del 1 trodde vi det var lov å ha flere enn 2 valgmuligheter, og har lagd programmet slik at den kan behandle situasjoner med både 2 og 3 svaralternativer. Vi håper dette er tillatt.
     if(len(valgmuligheter) == 2):
         #Dette kjøres om spørsmålet har 2 svaralternativer
         valg = input('\nVelger du A) eller B)?').lower()
