@@ -1,7 +1,5 @@
 print('Hei Erling! Det har oppstått noen konflikter i prosjektet ditt, og du må ta en rekke valg for å ta vare på teamet ditt.')
 
-print('\nDu får 2 valg: \n')
-
 poeng = 0
 
 #Vi lager variabelen poeng for å lagre brukerens progresjon gjennom storyen.
@@ -63,6 +61,8 @@ if valg == 'a':
     poeng = poeng + 10
 elif valg == 'b':
     #Om brukeren ikke svarer A), sjekkes det om den svarer B) i stedet. C) trengs ikke sjekkes, fordi det er lik 0 poeng.
+    poeng = poeng - 5
+elif valg == 'c':
     poeng = poeng + 5
 
 print ('\nTakk! Her er siste problemstilling:')
