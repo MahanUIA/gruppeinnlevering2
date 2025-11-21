@@ -1,5 +1,10 @@
+# Brukerens poengsum
 poeng = 0
 
+
+# Presenterer problemstillingen og gir deg valgmuligheter du kan velge mellom
+
+# problemstillingen må bli sendt som en string og valgmulighet blir sendt som en liste med tuple verdier hvor første verdi er valg tekst og andre verdi er poeng
 def presentereProblemOgValg(problemStilling, valgMuligheter):
     global poeng
     print(problemStilling)
@@ -24,7 +29,9 @@ def presentereProblemOgValg(problemStilling, valgMuligheter):
     poeng += valget[1]
     print("\n")
 
-# --- SITUASJON 1 ---
+# SITUASJON 1
+
+# Bruker funksjonen til situasjon 1
 presentereProblemOgValg(
     "Situasjon 1: Hvordan håndtere konflikten mellom Silje og Sivert?",
     [
@@ -33,7 +40,9 @@ presentereProblemOgValg(
     ]
 )
 
-# --- SITUASJON 2 ---
+# SITUASJON 2
+
+# Bruker funksjonen til situasjon 2
 presentereProblemOgValg(
     "Situasjon 2: Hvordan forhindre at konflikten mellom Hamdi og Jabir blusser opp?",
     [
@@ -43,7 +52,9 @@ presentereProblemOgValg(
     ]
 )
 
-# --- SITUASJON 3 ---
+# SITUASJON 3
+
+# Bruker funksjonen til situasjon 3
 presentereProblemOgValg(
     "Situasjon 3: Hvordan bevare motivasjonen i teamet som en helhet?",
     [
@@ -53,8 +64,10 @@ presentereProblemOgValg(
     ]
 )
 
-# --- RESULTAT ---
-print("-" * 40)
+# RESULTAT
+
+# Skriver ut resultatet ditt basert på hvor mange poeng du har
+print("------------------------------------------")
 print("RESULTAT")
 print(poeng, "POENG")
 

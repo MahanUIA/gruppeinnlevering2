@@ -1,14 +1,15 @@
 poeng = 0
 
+# Skriver ut introduksjonen
 print("Velkomen Erling...")
 print("Her velger du hvordan du kan kåndtere konflikten")
 
 
 
-"""
-1. printe problemstilling 
-2. presentere valgmuligheter
-"""
+
+#1. printe problemstilling 
+#2. presentere valgmuligheter
+
 def presentereproblemogvalg(problemstilling, valgmuligheter):
     print(problemstilling)
 
@@ -28,7 +29,7 @@ def presentereproblemogvalg(problemstilling, valgmuligheter):
 
     return brukervalg
 
-
+# Problem 1
 problem1 = "Uenighet om teknologivalg og design har utviklet seg fra en sakskonflikt til en personkonflikt. Silje mener løsningen Sivert foreslår vil låse brukeropplevelsen og hindre innovasjon. Sivert mener Siljes forslag er urealistisk, usikkert og for kostbart."
 
 y = [
@@ -42,7 +43,7 @@ if presentereproblemogvalg(problem1, y) == 1:
 print("Poeng:", poeng)
 
 
-
+# Problem 2
 problem2 = """
 Samtidig med konflikten mellom Silje og Sivert oppstår det spenning mellom Hamdi(kulturavdelingen) og Jabir (brukerrepresentant).De er uenige om hvordan innbyggerne skal kunne delta i digitale folkemøter:• Hamdi ønsker en kontrollert løsning gjennom kommunens eksisterendeplattform.• Jabir ønsker et mer åpent, dialogbasert system med rom for spontane innspill.Foreløpig er uenigheten lavmælt, men Erling merker at frustrasjonen vokser. Prosjektetnærmer seg en viktig milepæl: første prototype skal være klar om tre uker. Stemningen erspent, kommunikasjonen hakkete, og Erling vet at hans neste valg kan avgjøre omteamet beveger seg videre mot “norming” – eller blir stående fast i stormen.
 """
@@ -55,6 +56,7 @@ d = [
 
 brukervalg = presentereproblemogvalg(problem2, d)
 
+#Tildel poengsum til problem 2
 if brukervalg == 1:
     poeng = poeng + 1
     print ("du valgte å ta initiativ til et felles møte")
@@ -64,7 +66,7 @@ else:
     poeng = poeng + 0.5
     print("du valgte å avvente og håpe at partene finner en løsning selv")
 
-
+# Problem 3
 problem3 = """
 Hvordan bevare motivasjonen i teamet som helhet?"""
 
@@ -74,6 +76,7 @@ e =[
     " valg 3: Fokusere 100% på effektivitet, og kun få teamet til å jobbe med arbeidet"
     ]
 
+#Tildel poengsum til problem 3
 brukervalg = presentereproblemogvalg(problem3, e)
 
 if brukervalg == 1:
@@ -83,7 +86,7 @@ if brukervalg == 2:
     poeng = poeng + 0.5
     print("du valgte å prioritere fremdrift og leveranser for å holde fokus på resultatet")
 
-
+# Sjekk konsekvensen
 if poeng >= 2.5:
     print("Konfliktene blir løst og gruppa jobber godt sammen! Produktiviteten er veldig god.")
 elif poeng <2.1 and poeng > 1:

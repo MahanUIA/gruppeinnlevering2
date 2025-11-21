@@ -1,3 +1,4 @@
+#Skriver ut introduksjon og holder styr på poengsum
 print("Interaktiv story prosjekt.")
 poeng = 0
 #Starter storyen med 0 poeng
@@ -7,6 +8,7 @@ print("Situasjon 1: Hvordan håndtere konflikten mellom silje og sivert?")
 print("1: Kjøre workshop for å legge grunnlag for teambuilding. La konflikten vente på seg litt.")
 print("2: Erling velger Siverts løsning uten å vurdere alternativene ordentlig, fordi han ikke har tid til det.")
 
+#Gir brukeren valg og teller opp poeng
 valg = int(input("Velg mellom 1 og 2: "))
 while (valg !=1) and (valg !=2):
     print ("Ugyldig valg!!")
@@ -22,6 +24,7 @@ print("1: Kjøre avstemning med alle i bedriften og komme til kompromiss. Demokr
 print("2: Erling unngår konflikten.")
 print("3: Erling analyserer saken selv, og tar en sjefsavgjørelse basert på fakta")
 
+#Gir brukeren valg og teller opp poeng
 valg = int(input("Velg mellom 1, 2 og 3:"))
 while (valg !=1) and (valg !=2) and (valg !=3):
     print ("ugyldig valg")
@@ -39,6 +42,7 @@ print("1: Erling inviterer hele teamet med på restaurant, på prosjektets regni
 print("2: Erling avvikler 1 ukes ferie for alle prosjektets ansatte.")
 print("3: Erling fokuserer utelukkende på effektivitet, og får teamet til å jobbe med prosjektet")
 
+#Gir brukeren valg og teller opp poeng
 valg = int(input("velg mellom 1, 2 og 3: "))
 while (valg !=1) and (valg !=2) and (valg !=3):
     print("ugyldig valg")
@@ -51,6 +55,8 @@ elif valg == 3:
     poeng += 0
 
 #RESULTAT
+
+#Teller opp resultater og gir deg en konsekvens basert på poengsummen
 print("RESULTAT")
 print(poeng, "POENG")
 if poeng > 20:
